@@ -1,6 +1,6 @@
 .PHONY: check lint format typecheck complexity test build
 
-check: lint format typecheck complexity test
+check: lint format typecheck complexity test fix security
 
 lint:
 	uv run ruff check .

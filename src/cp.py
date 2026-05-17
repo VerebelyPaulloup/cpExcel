@@ -1,7 +1,6 @@
 import openpyxl
 from openpyxl import load_workbook
 import os 
-import sys
 from manual import ManualPlacementWindow
 
 def getFileList(folderPath):

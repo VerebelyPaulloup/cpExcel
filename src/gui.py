@@ -1,7 +1,5 @@
 import customtkinter as ctk
-from tkinter import filedialog, messagebox
 from cp import verifyFiles, getFileList, copyImages
-from manual import ManualPlacementWindow
 
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")
@@ -99,6 +97,3 @@ class App(ctk.CTk):
 
         return 0
 
-
-cp = App()
-cp.mainloop()
