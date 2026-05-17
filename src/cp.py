@@ -45,7 +45,7 @@ def closeWorkbook(workbook,destinationFile):
         return
     try:
         workbook.save(destinationFile)
-        print(f"Workbook saved successfully: {destinationFile}")
+        print(f"Workbook saved successfully to {destinationFile}")
     except Exception as e:
         print(f"Error saving workbook: {e}")
 
