@@ -1,7 +1,7 @@
 import openpyxl
 from openpyxl import load_workbook
 import os 
-from manual import ManualPlacementWindow
+from src.manual import ManualPlacementWindow
 
 def getFileList(folderPath):
     if not os.path.exists(folderPath):

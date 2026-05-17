@@ -4,10 +4,10 @@ import pytest
 import openpyxl
 from unittest.mock import MagicMock
 
-sys.path.insert(0, os.path.join(os.path.dirname(__file__), "..", "src"))
-sys.modules.setdefault("manual", MagicMock())
+sys.path.insert(0, os.path.join(os.path.dirname(__file__), ".."))
+sys.modules.setdefault("src.manual", MagicMock())
 
-from cp import verifyFile, verifyFiles, getFileList, closeWorkbook, copyImages
+from src.cp import verifyFile, verifyFiles, getFileList, closeWorkbook, copyImages
 
 TESTFOLDER = os.path.join(os.path.dirname(__file__), "..", "testfolder")
 JPG = os.path.join(TESTFOLDER, "wlp.jpg")

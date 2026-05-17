@@ -1,5 +1,6 @@
 import customtkinter as ctk
-from cp import verifyFiles, getFileList, copyImages
+from tkinter import filedialog
+from src.cp import verifyFiles, getFileList, copyImages
 
 ctk.set_appearance_mode("dark")
 ctk.set_default_color_theme("blue")

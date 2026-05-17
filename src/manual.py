@@ -10,10 +10,12 @@ class ManualPlacementWindow(ctk.CTkToplevel):
         self.tableFrame = ctk.CTkScrollableFrame(self)
         self.tableFrame.pack(pady=20, padx=20, fill="both", expand=True)
 
+        self._widgets = []
+
         self.buttonFrame = ctk.CTkFrame(self)
         self.buttonFrame.pack(pady=20)
         self.saveButton = ctk.CTkButton(self.buttonFrame, text="Enregistrer", command=self.savePlacement)
-        self.saveButton.pack(pady=20)   
+        self.saveButton.pack(pady=20)
         
     def showPlacelements(self, fileList,sheetlist=None):
 
@@ -49,6 +51,5 @@ class ManualPlacementWindow(ctk.CTkToplevel):
 
     def savePlacement(self):
         self.result = [{"file": w["file"],"col": w["col"].get(),"row": w["row"].get(),"sheet": w["sheet"].get(),} for w in self._widgets]
-        self.destroy()
         print("Placement enregistré")
         self.destroy()
