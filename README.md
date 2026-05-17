@@ -2,6 +2,12 @@
 
 A desktop GUI app for embedding images into Excel files.
 
+## To do
+- [] Make a visual placement for manual placement
+- [] Better UI 
+- [] Add a visual indicator off succesfull/unsuccesfull copy
+
+
 ## Features
 
 - Select individual image files (PNG, JPG, JPEG) or a whole folder
