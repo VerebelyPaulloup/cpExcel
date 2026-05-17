@@ -6,6 +6,8 @@ A desktop GUI app for embedding images into Excel files.
 - [] Make a visual placement for manual placement
 - [] Better UI 
 - [] Add a visual indicator off succesfull/unsuccesfull copy
+- [] Test make build
+- [] Add mamba/conda/pip env if needed
 
 
 ## Features
